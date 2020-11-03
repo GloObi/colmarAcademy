@@ -70,3 +70,75 @@ nav a {
     color: white;
     font-size: 18px;
 }
+
+#practice {
+    display: flex;
+    /* padding-top: 32px; */
+}
+
+#imgSection {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+#imgSection img {
+    width: 100%;
+}
+
+#practice aside {
+    width: 40%;
+    /* background: blue; */
+}
+
+.info {
+    display: flex;
+    padding: 10px;
+}
+
+.info img {
+    width: 35%;
+}
+
+.info .infoText {
+    width: 65%;
+    height: auto;
+    align-content: space-between;
+    padding: 10px;
+}
+
+#orientation {
+    padding-top: 32px;
+}
+
+
+
+
+#learning {
+    padding: 32px 72px 0px 72px;
+    background-color: #D8D8D8;
+}
+
+#learningCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#learning h1 {
+    text-align: center;
+}
+
+
+#learning .card {
+    background-color: white;
+    width: 30%;
+    margin-bottom: 32px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.cardText {
+    padding: 16px 16px 24px 16px;
+}
