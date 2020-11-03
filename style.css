@@ -35,7 +35,7 @@ header nav {
 nav a {
     color: #4A4A4A;
     text-decoration: none;
-
+    
 }
 
 
@@ -103,10 +103,10 @@ nav a {
     width: 65%;
     height: auto;
     align-content: space-between;
-    padding: 10px;
+    padding: 16px;
 }
 
-#orientation {
+.top {
     padding-top: 32px;
 }
 
@@ -141,4 +141,53 @@ nav a {
 
 .cardText {
     padding: 16px 16px 24px 16px;
+}
+
+
+#thesis {
+    padding: 32px 0 32px 24px;
+}
+
+#thesisContent {
+    display: flex;
+}
+
+#thesis h1 {
+    text-align: center;
+    
+}
+
+
+#videoPart {
+    width: 60%;
+    padding-right: 24px;
+}
+
+#videoPart video {
+    width: 100%;
+}
+
+
+#thesisCards {
+    width: 40%;
+}
+
+#fisma {
+    padding-top: 0px;
+}
+
+footer {
+    padding: 16px 0 32px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #rightContent p {
+    margin: 0px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-right: 10px;
 }
