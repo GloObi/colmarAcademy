@@ -1,271 +1,480 @@
-* {
-    /* border: 1px solid red; */
-}
-
+/* col-xl */
+/* col-lg */
+/* col-md */
+/* col-sm */
 body {
-    /* color:white; */
-    font-family: Futura, sans-serif;
+  /* color:white; */
+  font-family: Futura, sans-serif;
 }
 
+header #desktopContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+  background-color: #373F51;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+@media screen and (max-width: 768px) {
+  header #desktopContent {
+    display: none;
+  }
+}
 
-header {
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #373F51;
+header #phoneContent {
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  header #phoneContent {
+    display: none;
+  }
+}
+
+header #phoneContent #phoneNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 64px;
+}
+
+header #phoneContent #phoneNav img {
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+header #phoneContent #phoneNav img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+header #desktopContent nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
 }
 
 header #logo {
-    display:flex;
-    /* color: white; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* color: white; */
 }
-
 
 header #logoSpan {
-    color: #9B9B9B;
-    font-weight: 300;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    font-size: 1.1rem;
+  color: #9B9B9B;
+  font-weight: 300;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    
+  color: white;
+  text-decoration: none;
 }
 
-a { 
-    color:#373F51;
-    font-weight: 500;
-    text-decoration: none;
+a {
+  color: #373F51;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-a:hover { 
-    color: #DAA49A;
-    font-weight: 700;
+a:hover {
+  color: #DAA49A;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
+
 #banner {
-    display: flex;
-    padding: 0 24px;
-    background-color: #DAA49A;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  background-color: #DAA49A;
 }
 
-#banner #imgWrap {
+@media screen and (min-width: 768px) {
+  #banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 32px 24px 32px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner {
+    display: block;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner #imgWrap {
     width: 60%;
     height: auto;
     margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner #imgWrap {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 #banner img {
-    width: 100%;
+  width: 100%;
 }
 
- h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-} 
-
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
 h2 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 p {
-    /* font-family: Open-sans; */
-    font-size: 1rem;
+  /* font-family: Open-sans; */
+  font-size: 1rem;
 }
 
 q {
-    font-style: italic;
+  font-style: italic;
 }
 
 #bannerTitle {
-    width: 30%;
-    align-self: center;
+  /* text-align: center; */
+}
+
+@media screen and (min-width: 768px) {
+  #bannerTitle {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     text-align: justify;
-    /* text-align: center; */
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bannerTitle {
+    padding: 32px 16px;
+  }
+  #bannerTitle h1 {
+    margin: 0px;
+  }
+  #bannerTitle p {
+    margin-top: 32px 0px 24px;
+  }
 }
 
 #bannerTitle button {
-    width: 100%;
-    background-color: #373F51;
-    padding: 8px;
-    color: white;
-    font-size: 18px;
+  width: 100%;
+  background-color: #373F51;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
 }
 
 #bannerTitle button:hover {
-    background-color: #D8DBE2;
-    color: black;
-    cursor: pointer;
+  background-color: #D8DBE2;
+  color: black;
+  cursor: pointer;
 }
 
 #practice {
-    display: flex;
-    background-color: #D8DBE2;
-    padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #D8DBE2;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  #practice {
+    padding-top: 0px;
+  }
 }
 
 #imgSection {
-    width: 60%;
-    margin: 0px 24px 32px;
+  width: 60%;
+  margin: 0px 24px 32px;
+}
+
+@media screen and (max-width: 768px) {
+  #imgSection {
+    display: none;
+  }
 }
 
 #imgSection img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-#practice aside {
+@media screen and (min-width: 768px) {
+  #practice aside {
     width: 40%;
-    /* background: blue; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #practice aside {
+    width: 100%;
+  }
 }
 
 .info {
-    display: flex;
-    padding: 16px 0 16px 16px;
-    align-items: center;;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0 16px 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 768px) {
+  .info {
+    display: block;
+    padding: 16px;
+  }
+  .info h2 {
+    margin-top: 0px;
+  }
+}
+
+.last {
+  border-bottom: none;
+}
 
 .info:hover {
-    background-color: #373F51;
-    color: white;
-    cursor: pointer;
+  background-color: #373F51;
+  color: white;
+  cursor: pointer;
 }
 
 .info:hover a {
-    color: white;
+  color: white;
 }
 
 .info:hover a:hover {
-    color: #DAA49A;
+  color: #DAA49A;
 }
 
 .infoImWrap {
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .infoImWrap {
     width: 35%;
-    height: auto;
+  }
 }
 
 .info img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .info img {
+    height: 180px;
+    -o-object-fit: none;
+       object-fit: none;
+    /* Do not scale the image */
+    -o-object-position: center;
+       object-position: center;
+    /* Center the image within the element */
+  }
 }
 
 .info .infoText {
-    width: 65%;
-    height: auto;
-    align-content: space-between;
-    padding: 16px;
+  height: auto;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 16px;
 }
-/* 
-.top {
-    padding-top: 32px;
-} */
 
-
-
+@media screen and (min-width: 768px) {
+  .info .infoText {
+    width: 65%;
+  }
+}
 
 #learning {
-    padding: 32px 72px 0px 72px;
-    background-color: #373F51;
+  padding: 32px 72px 0px 72px;
+  background-color: #373F51;
+}
+
+@media screen and (max-width: 768px) {
+  #learning {
+    padding: 32px 24px;
+    background-color: #DAA49A;
+  }
+  #learning h1 {
+    margin: 0px;
+  }
 }
 
 #learningCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #learning h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #learning h1 {
+    margin-bottom: 8px;
+    color: black;
+  }
 }
 
 #learning .card {
-    background-color: white;
-    width: 26%;
-    margin-bottom: 32px;
-    border-radius: 8px;
-    transition: all .4s ease-in-out;
+  background-color: white;
+  width: 26%;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  #learning .card {
+    width: 100%;
+    padding: 0px;
+    margin: 8px;
+    background-color: #373F51;
+    color: white;
+  }
+  #learning .card p {
+    display: none;
+  }
+  #learning .card img {
+    display: none;
+  }
+  #learning .card h3 {
+    margin: 0px;
+  }
 }
 
 #learning .card:hover {
-    transform: scale(1.08);
-    cursor: pointer
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  cursor: pointer;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 8px; */
-
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
 }
 
 .cardText {
-    padding: 16px 16px 24px 16px;
+  padding: 16px 16px 24px 16px;
 }
 
-
 #thesis {
-    padding: 32px 0 32px 24px;
-    background-color: #D8DBE2;
+  padding: 32px 0 32px 24px;
+  background-color: #D8DBE2;
+}
+
+@media screen and (max-width: 768px) {
+  #thesis {
+    padding: 32px 0px 16px 0px;
+  }
+  #thesis #thesisCards {
+    display: none;
+  }
+  #thesis p {
+    display: none;
+  }
+  #thesis q {
+    display: none;
+  }
+  #thesis h3 {
+    display: none;
+  }
+  #thesis h1 {
+    margin: 0 0 16px 0;
+  }
 }
 
 #thesisContent {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #thesis h1 {
-    text-align: center;
-    
+  text-align: center;
 }
 
-
-#videoPart {
+@media screen and (min-width: 768px) {
+  #videoPart {
     width: 60%;
     padding-right: 24px;
+  }
 }
 
 #videoPart video {
-    width: 100%;
+  width: 100%;
 }
 
-
 #thesisCards {
-    width: 40%;
-    /* display: flex; */
+  width: 40%;
+  /* display: flex; */
 }
 
 /* #fisma {
-    padding-top: 0px;
-} */
-
+        padding-top: 0px;
+    } */
 footer {
-    padding: 16px 0 32px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #D8DBE2;
+  padding: 16px 0 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D8DBE2;
 }
 
 footer #rightContent p {
-    margin: 0px;
+  margin: 0px;
 }
 
 footer a {
-    text-decoration: none;
-    margin-right: 10px;
+  text-decoration: none;
+  margin-right: 10px;
 }
+/*# sourceMappingURL=style.css.map */
