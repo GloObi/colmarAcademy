@@ -18,13 +18,15 @@
             <a href="#" style="margin-right: 16px">On campus</a>
             <a href="#" style="margin-right: 16px">Online</a>
             <a href="#" style="margin-right: 16px">For companies</a>
-            <a href="#">Sign in</a>
+            <a href="#rightContent">Sign in</a>
         </nav>
         
     </header>
     
     <section id="banner">
-        <img src="./images/banner.jpg" alt="">
+        <div id="imgWrap">
+            <img src="./images/banner.jpg" alt="">
+        </div>
         <div id="bannerTitle">
             <h1>Learn something<br>new everyday</h1>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vero?</h3>
@@ -39,14 +41,16 @@
             <img src="./images/information-main.jpg" alt="black dude readin book">
             <h1>It doesn't hurt to keep practicing</h1>
             <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium veniam ratione commodi, repudiandae fugiat voluptatum placeat, temporibus provident necessitatibus sapiente consequatur? Repudiandae cupiditate necessitatibus recusandae eos cumque? Voluptas, praesentium.</q>
-            <p><br>Emanuel, Sr strategist at Hiring.com</p>
+            <p style="font-size: 0.8rem"><br>Emanuel, Sr strategist at Hiring.com</p>
         </div>
         
         
         <aside>
             
             <div class="info top" id="orientation">
-                <img src="./images/information-orientation.jpg" alt="walking shadows">
+                <div class="infoImWrap">
+                    <img src="./images/information-orientation.jpg" alt="walking shadows">
+                </div>
                 <div class="infoText">
                     <h2>Orientation date</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, odio.</p>
@@ -54,7 +58,9 @@
                 </div>
             </div>
             <div class="info" id="campus">
-                <img src="./images/information-campus.jpg" alt="walking shadows">
+                <div class="infoImWrap">
+                    <img src="./images/information-campus.jpg" alt="walking shadows">
+                </div>
                 <div class="infoText">
                     <h2>Our campus</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, odio.</p>
@@ -62,7 +68,9 @@
                 </div>
             </div>
             <div class="info" id="guest">
-                <img src="./images/information-guest-lecture.jpg" alt="walking shadows">
+                <div class="infoImWrap">
+                    <img src="./images/information-guest-lecture.jpg" alt="walking shadows">
+                </div>
                 <div class="infoText">
                     <h2>Our guest lecture</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, odio.</p>
@@ -158,16 +166,20 @@
             <div id="thesisCards">
                 
                 <div class="info" id="fisma">
-                    <img src="./images/thesis-fisma.jpg" alt="">
-                    <div class="cardText">
+                    <div class="infoImWrap">
+                        <img src="./images/thesis-fisma.jpg" alt="">
+                    </div>
+                    <div class="infoText">
                         <h3>Fisma: Design and Prototype</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, dolore.</p>
                     </div>
                 </div>  
 
                 <div class="info">
-                    <img src="./images/thesis-now-and-then.jpg" alt="">
-                    <div class="cardText">
+                    <div class="infoImWrap">
+                        <img src="./images/thesis-now-and-then.jpg" alt="">
+                    </div>
+                    <div class="infoText">
                         <h3>Now and Then</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, dolore.</p>
                     </div>
@@ -179,9 +191,10 @@
         
     </section>
 
-    <hr>
 
     <footer>
+
+        
         <div id="rightContent">
             <p>©2016 Colmar Academy</p>
         </div>

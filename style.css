@@ -3,7 +3,7 @@
 }
 
 body {
-    color:#4A4A4A;
+    /* color:white; */
     font-family: Futura, sans-serif;
 }
 
@@ -13,11 +13,12 @@ header {
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #373F51;
 }
 
 header #logo {
     display:flex;
+    /* color: white; */
 }
 
 
@@ -29,60 +30,102 @@ header #logoSpan {
 header nav {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 nav a {
-    color: #4A4A4A;
+    color: white;
     text-decoration: none;
     
 }
 
+a { 
+    color:#373F51;
+    font-weight: 500;
+    text-decoration: none;
+}
 
+a:hover { 
+    color: #DAA49A;
+    font-weight: 700;
+}
 #banner {
     display: flex;
     padding: 0 24px;
-    background-color: #D8D8D8;
+    background-color: #DAA49A;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-#banner img {
+#banner #imgWrap {
     width: 60%;
+    height: auto;
     margin-right: 24px;
 }
 
-#banner h1 {
-    font-size: 50px;
+#banner img {
+    width: 100%;
+}
+
+ h1 {
+    font-size: 2.5rem;
     font-weight: bold;
+} 
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    /* font-family: Open-sans; */
+    font-size: 1rem;
+}
+
+q {
+    font-style: italic;
 }
 
 #bannerTitle {
     width: 30%;
     align-self: center;
+    text-align: justify;
     /* text-align: center; */
 }
 
 #bannerTitle button {
     width: 100%;
-    background-color: #4A4A4A;
+    background-color: #373F51;
     padding: 8px;
     color: white;
     font-size: 18px;
 }
 
+#bannerTitle button:hover {
+    background-color: #D8DBE2;
+    color: black;
+    cursor: pointer;
+}
+
 #practice {
     display: flex;
-    /* padding-top: 32px; */
+    background-color: #D8DBE2;
+    padding-top: 32px;
 }
 
 #imgSection {
     width: 60%;
-    margin: 32px 24px;
+    margin: 0px 24px 32px;
 }
 
 #imgSection img {
     width: 100%;
+    height: auto;
 }
 
 #practice aside {
@@ -92,11 +135,33 @@ nav a {
 
 .info {
     display: flex;
-    padding: 10px;
+    padding: 16px 0 16px 16px;
+    align-items: center;;
+}
+
+
+.info:hover {
+    background-color: #373F51;
+    color: white;
+    cursor: pointer;
+}
+
+.info:hover a {
+    color: white;
+}
+
+.info:hover a:hover {
+    color: #DAA49A;
+}
+
+.infoImWrap {
+    width: 35%;
+    height: auto;
 }
 
 .info img {
-    width: 35%;
+    width: 100%;
+    height: auto;
 }
 
 .info .infoText {
@@ -105,17 +170,17 @@ nav a {
     align-content: space-between;
     padding: 16px;
 }
-
+/* 
 .top {
     padding-top: 32px;
-}
+} */
 
 
 
 
 #learning {
     padding: 32px 72px 0px 72px;
-    background-color: #D8D8D8;
+    background-color: #373F51;
 }
 
 #learningCards {
@@ -126,17 +191,27 @@ nav a {
 
 #learning h1 {
     text-align: center;
+    color: white;
 }
-
 
 #learning .card {
     background-color: white;
-    width: 30%;
+    width: 26%;
     margin-bottom: 32px;
+    border-radius: 8px;
+    transition: all .4s ease-in-out;
+}
+
+#learning .card:hover {
+    transform: scale(1.08);
+    cursor: pointer
 }
 
 .card img {
     width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+
 }
 
 .cardText {
@@ -146,6 +221,7 @@ nav a {
 
 #thesis {
     padding: 32px 0 32px 24px;
+    background-color: #D8DBE2;
 }
 
 #thesisContent {
@@ -170,17 +246,19 @@ nav a {
 
 #thesisCards {
     width: 40%;
+    /* display: flex; */
 }
 
-#fisma {
+/* #fisma {
     padding-top: 0px;
-}
+} */
 
 footer {
     padding: 16px 0 32px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #D8DBE2;
 }
 
 footer #rightContent p {
