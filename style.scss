@@ -248,15 +248,20 @@ body {
             width: 35%;
         }
     }
-    
+    .info {
+        @media screen and (min-width: $tablet) {
+            .mobileImg { display: none;}
+        }
+
+        @media screen and (max-width: $tablet) {
+            .desktopImg { display: none;}
+        }
+    }
     .info img {
         width: 100%;
         height: auto;
-        @media screen and (max-width: $tablet) {
-            height: 180px;
-            object-fit: none; /* Do not scale the image */
-            object-position: center; /* Center the image within the element */
-        }
+
+
     }
     
     .info .infoText {

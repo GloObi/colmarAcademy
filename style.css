@@ -288,21 +288,21 @@ q {
   }
 }
 
-.info img {
-  width: 100%;
-  height: auto;
+@media screen and (min-width: 768px) {
+  .info .mobileImg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .info img {
-    height: 180px;
-    -o-object-fit: none;
-       object-fit: none;
-    /* Do not scale the image */
-    -o-object-position: center;
-       object-position: center;
-    /* Center the image within the element */
+  .info .desktopImg {
+    display: none;
   }
+}
+
+.info img {
+  width: 100%;
+  height: auto;
 }
 
 .info .infoText {
