@@ -1,7 +1,6 @@
 * {
-    // border: 1px solid red; 
+  // border: 1px solid red;
 }
-
 
 $desktop: 1200px; /* col-xl */
 $laptop: 992px; /* col-lg */
@@ -9,399 +8,398 @@ $tablet: 768px; /* col-md */
 $phone: 486px; /* col-sm */
 
 body {
-    /* color:white; */
-    font-family: Futura, sans-serif;
+  /* color:white; */
+  font-family: Futura, sans-serif;
+  margin: 0px;
 }
 
-
 // header * {
-    //     // display: flex;
-    // }
-    
-    header #desktopContent {
-        display: flex;
-        padding: 0 24px;
-        background-color: #373F51;
-        justify-content: space-between;
-        @media screen and (max-width: $tablet) {
-            display: none;
-        }
-    }
-    
-    header #phoneContent {
-        background-color: white;
-        @media screen and (min-width: $tablet) { display: none; }
-    }
-    
-    
-    header #phoneContent #phoneNav {
-        display: flex;
-        justify-content: space-around;
-        height: 64px;
-        img { cursor:pointer;
-        transition: all .1s ease-in-out;
-        }
-        img:hover {
-            transform: scale(1.5);
-        }
-    }
+//     // display: flex;
+// }
 
-    
-    header #desktopContent nav {
-        display: flex;
-        align-items: center;
-        font-size: 1.1rem;
-    }
-    
-    header #logo {
-        display:flex;
-        /* color: white; */
-    }
-    
-    
-    header #logoSpan {
-        color: #9B9B9B;
-        font-weight: 300;
-    }
-    
-    
-    nav a {
-        color: white;
-        text-decoration: none;     
-    }
-    
-    
-    
-    
-    a { 
-        color:#373F51;
-        font-weight: 500;
-        text-decoration: none;
-        transition: all .2s ease-in-out;
-    }
-    
-    
-    a:hover { 
-        color: #DAA49A;
-        transform: scale(1.08);
-    }
-    
-    
-    #banner {
-        
-        background-color: #DAA49A;
-        @media screen and (min-width: $tablet) { 
-            display: flex;
-            padding: 32px 24px 32px 0px;
-        }
-        @media screen and (max-width: $tablet) { 
-            display: block;
-            padding: 0px; 
-        }
-    }
-    
-    #banner #imgWrap {
-        @media screen and (min-width: $tablet) {
-            width: 60%;
-            height: auto;
-            margin-right: 24px;
-        }
-        
-        @media screen and (max-width: $tablet) { 
-            width: 100%;
-            margin: 0px;
-        }
-    }
-    
-    #banner img {
-        width: 100%;
-    }
-    
+header #desktopContent {
+  display: flex;
+  padding: 0 24px;
+  background-color: #373f51;
+  justify-content: space-between;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+header #phoneContent {
+  background-color: white;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+header #phoneContent #phoneNav {
+  display: flex;
+  justify-content: space-around;
+  height: 64px;
+  img {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.5);
+  }
+}
+
+header #desktopContent nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+header #logo {
+  display: flex;
+  /* color: white; */
+}
+
+header #logoSpan {
+  color: #9b9b9b;
+  font-weight: 300;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: #373f51;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #daa49a;
+  transform: scale(1.08);
+}
+
+#banner {
+  background-color: #daa49a;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding: 32px 24px 32px 0px;
+  }
+  @media screen and (max-width: $tablet) {
+    display: block;
+    padding: 0px;
+  }
+}
+
+#banner #imgWrap {
+  @media screen and (min-width: $tablet) {
+    width: 60%;
+    height: auto;
+    margin-right: 24px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+#banner img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  /* font-family: Open-sans; */
+  font-size: 1rem;
+}
+
+q {
+  font-style: italic;
+}
+
+#bannerTitle {
+  // background-color: purple;
+  /* text-align: center; */
+  @media screen and (min-width: $tablet) {
+    align-self: center;
+    text-align: justify;
+    width: 30%;
+  }
+  @media screen and (max-width: $tablet) {
+    // display: blosck;
+    // width: 100%;
     h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-    } 
-    
-    
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
+      margin: 0px;
     }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-    
     p {
-        /* font-family: Open-sans; */
-        font-size: 1rem;
+      margin-top: 32px 0px 24px;
     }
-    
-    q {
-        font-style: italic;
-    }
-    
-    #bannerTitle {
-        // background-color: purple;
-        /* text-align: center; */
-        @media screen and (min-width: $tablet) { 
-            align-self: center;
-            text-align: justify;
-            width: 30%;
-        }
-        @media screen and (max-width: $tablet) { 
-            // display: blosck;
-            // width: 100%;
-            h1 { margin: 0px; }
-            p { margin-top: 32px 0px 24px; }
-            padding: 32px 16px;
-        }
-        
-    }
-    
-    #bannerTitle button {
-        width: 100%;
-        background-color: #373F51;
-        padding: 8px;
-        color: white;
-        font-size: 18px;
-    }
-    
-    #bannerTitle button:hover {
-        background-color: #D8DBE2;
-        color: black;
-        cursor: pointer;
-    }
-    
-    
-    
-    #practice {
-        display: flex;
-        background-color: #D8DBE2;
-        padding-top: 32px;
-        @media screen and (max-width: $tablet) {
-            padding-top: 0px;
-        }
-    }
-    
-    #imgSection {
-        width: 60%;
-        margin: 0px 24px 32px;
-        @media screen and (max-width: $tablet) {
-            display: none;
-        }
-    }
-    
-    #imgSection img {
-        width: 100%;
-        height: auto;
-    }
-    
-    #practice aside {
-        @media screen and (min-width: $tablet) {
-            width: 40%;
-        }        
-        @media screen and (max-width: $tablet) {
-            width: 100%;
-        }
-        // background: blue;
-        
-    }
-    
-    .info {
-        display: flex;
-        padding: 16px 0 16px 16px;
-        align-items: center;
-        border-bottom: 1px solid black;
-        @media screen and (max-width: $tablet) {
-            display:block;
-            padding: 16px;
-            h2 { margin-top: 0px;}
-        }
-    }
-    
-    .last {
-        border-bottom: none;
-    }
-    
-    
-    .info:hover {
-        background-color: #373F51;
-        color: white;
-        cursor: pointer;
-    }
-    
-    .info:hover a {
-        color: white;
-        
-    }
-    
-    
-    .info:hover a:hover {
-        color: #DAA49A;
-    }
-    
-    .infoImWrap {
-        height: auto;
-        
-        @media screen and (min-width: $tablet) {
-            width: 35%;
-        }
-    }
-    .info {
-        @media screen and (min-width: $tablet) {
-            .mobileImg { display: none;}
-        }
+    padding: 32px 16px;
+  }
+}
 
-        @media screen and (max-width: $tablet) {
-            .desktopImg { display: none;}
-        }
-    }
-    .info img {
-        width: 100%;
-        height: auto;
+#bannerTitle button {
+  width: 100%;
+  background-color: #373f51;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+}
 
+#bannerTitle button:hover {
+  background-color: #d8dbe2;
+  color: black;
+  cursor: pointer;
+}
 
-    }
-    
-    .info .infoText {
-        height: auto;
-        align-content: space-between;
-        padding: 16px;
-        
-        @media screen and (min-width: $tablet) {
-            width: 65%;
-        }
-    }
- 
+#practice {
+  display: flex;
+  background-color: #d8dbe2;
+  padding-top: 32px;
+  @media screen and (max-width: $tablet) {
+    padding-top: 0px;
+  }
+}
 
-    #learning {
-        padding: 32px 72px 0px 72px;
-        background-color: #373F51;
-        
-        @media screen and (max-width: $tablet) {
-            h1 { margin: 0px;}
-            padding: 32px 24px;
-            background-color: #DAA49A;
-        }
-        
-    }
-    
-    #learningCards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    
-    #learning h1 {
-        text-align: center;
-        color: white;
-        @media screen and (max-width: $tablet) {
-            margin-bottom: 8px;
-            color: black;
-        }
-    }
-    
-    #learning .card {
-        background-color: white;
-        width: 26%;
-        margin-bottom: 32px;
-        border-radius: 8px;
-        transition: all .4s ease-in-out;
-        
-        @media screen and (max-width: $tablet) {
-            p { display: none;}
-            img { display: none;}
-            h3 { margin: 0px;}
-            width: 100%;
-            padding: 0px;
-            margin: 8px;
-            background-color: #373F51;
-            color: white;
-        }
-        
-    }
-    
-    #learning .card:hover {
-        transform: scale(1.08);
-        cursor: pointer
-    }
-    
-    .card img {
-        width: 100%;
-        height: auto;
-        /* border-radius: 8px; */
-        
-    }
-    
-    .cardText {
-        padding: 16px 16px 24px 16px;
-    }
-    
-    
-    #thesis {
-        padding: 32px 0 32px 24px;
-        background-color: #D8DBE2;
-        
-        @media screen and (max-width: $tablet) {
-            #thesisCards { display: none;}
-            p { display: none;}
-            q { display: none;}
-            h3 { display: none;}
-            h1 { margin: 0 0 16px 0;}
+#imgSection {
+  width: 60%;
+  margin: 0px 24px 32px;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
 
-            padding: 32px 0px 16px 0px;
-        }
+#imgSection img {
+  width: 100%;
+  height: auto;
+}
+
+#practice aside {
+  @media screen and (min-width: $tablet) {
+    width: 40%;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+  // background: blue;
+}
+
+.info {
+  display: flex;
+  padding: 16px 0 16px 16px;
+  align-items: center;
+  border-bottom: 1px solid black;
+  @media screen and (max-width: $tablet) {
+    display: block;
+    padding: 16px;
+    h2 {
+      margin-top: 0px;
     }
-    
-    #thesisContent {
-        display: flex;
+  }
+}
+
+.last {
+  border-bottom: none;
+}
+
+.info:hover {
+  background-color: #373f51;
+  color: white;
+  cursor: pointer;
+}
+
+.info:hover a {
+  color: white;
+}
+
+.info:hover a:hover {
+  color: #daa49a;
+}
+
+.infoImWrap {
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 35%;
+  }
+}
+.info {
+  @media screen and (min-width: $tablet) {
+    .mobileImg {
+      display: none;
     }
-    
-    #thesis h1 {
-        text-align: center;
-        
+  }
+
+  @media screen and (max-width: $tablet) {
+    .desktopImg {
+      display: none;
     }
-    
-    
-    #videoPart {
-        
-        @media screen and (min-width: $tablet) {
-            width: 60%;
-            padding-right: 24px;
-        }
+  }
+}
+.info img {
+  width: 100%;
+  height: auto;
+}
+
+.info .infoText {
+  height: auto;
+  align-content: space-between;
+  padding: 16px;
+
+  @media screen and (min-width: $tablet) {
+    width: 65%;
+  }
+}
+
+#learning {
+  padding: 32px 72px 0px 72px;
+  background-color: #373f51;
+
+  @media screen and (max-width: $tablet) {
+    h1 {
+      margin: 0px;
     }
-    
-    #videoPart video {
-        width: 100%;
+    padding: 32px 24px;
+    background-color: #daa49a;
+  }
+}
+
+#learningCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#learning h1 {
+  text-align: center;
+  color: white;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 8px;
+    color: black;
+  }
+}
+
+#learning .card {
+  background-color: white;
+  width: 26%;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: $tablet) {
+    p {
+      display: none;
     }
-    
-    
+    img {
+      display: none;
+    }
+    h3 {
+      margin: 0px;
+    }
+    width: 100%;
+    padding: 0px;
+    margin: 8px;
+    background-color: #373f51;
+    color: white;
+  }
+}
+
+#learning .card:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+.cardText {
+  padding: 16px 16px 24px 16px;
+}
+
+#thesis {
+  padding: 32px 0 32px 24px;
+  background-color: #d8dbe2;
+
+  @media screen and (max-width: $tablet) {
     #thesisCards {
-        width: 40%;
-        /* display: flex; */
-        
-        
-        
+      display: none;
     }
-    
-    /* #fisma {
+    p {
+      display: none;
+    }
+    q {
+      display: none;
+    }
+    h3 {
+      display: none;
+    }
+    h1 {
+      margin: 0 0 16px 0;
+    }
+
+    padding: 32px 0px 16px 0px;
+  }
+}
+
+#thesisContent {
+  display: flex;
+}
+
+#thesis h1 {
+  text-align: center;
+}
+
+#videoPart {
+  @media screen and (min-width: $tablet) {
+    width: 60%;
+    padding-right: 24px;
+  }
+}
+
+#videoPart video {
+  width: 100%;
+}
+
+#thesisCards {
+  width: 40%;
+  /* display: flex; */
+}
+
+/* #fisma {
         padding-top: 0px;
     } */
-    
-    footer {
-        padding: 16px 0 32px 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #D8DBE2;
-    }
-    
-    footer #rightContent p {
-        margin: 0px;
-    }
-    
-    footer a {
-        text-decoration: none;
-        margin-right: 10px;
-    }
+
+footer {
+  padding: 16px 0 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8dbe2;
+}
+
+footer #rightContent p {
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-right: 10px;
+}

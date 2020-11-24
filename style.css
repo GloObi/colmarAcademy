@@ -5,6 +5,7 @@
 body {
   /* color:white; */
   font-family: Futura, sans-serif;
+  margin: 0px;
 }
 
 header #desktopContent {
@@ -12,7 +13,7 @@ header #desktopContent {
   display: -ms-flexbox;
   display: flex;
   padding: 0 24px;
-  background-color: #373F51;
+  background-color: #373f51;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -45,8 +46,8 @@ header #phoneContent #phoneNav {
 
 header #phoneContent #phoneNav img {
   cursor: pointer;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 header #phoneContent #phoneNav img:hover {
@@ -72,7 +73,7 @@ header #logo {
 }
 
 header #logoSpan {
-  color: #9B9B9B;
+  color: #9b9b9b;
   font-weight: 300;
 }
 
@@ -82,21 +83,21 @@ nav a {
 }
 
 a {
-  color: #373F51;
+  color: #373f51;
   font-weight: 500;
   text-decoration: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #DAA49A;
+  color: #daa49a;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
 
 #banner {
-  background-color: #DAA49A;
+  background-color: #daa49a;
 }
 
 @media screen and (min-width: 768px) {
@@ -185,14 +186,14 @@ q {
 
 #bannerTitle button {
   width: 100%;
-  background-color: #373F51;
+  background-color: #373f51;
   padding: 8px;
   color: white;
   font-size: 18px;
 }
 
 #bannerTitle button:hover {
-  background-color: #D8DBE2;
+  background-color: #d8dbe2;
   color: black;
   cursor: pointer;
 }
@@ -201,7 +202,7 @@ q {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #D8DBE2;
+  background-color: #d8dbe2;
   padding-top: 32px;
 }
 
@@ -265,7 +266,7 @@ q {
 }
 
 .info:hover {
-  background-color: #373F51;
+  background-color: #373f51;
   color: white;
   cursor: pointer;
 }
@@ -275,7 +276,7 @@ q {
 }
 
 .info:hover a:hover {
-  color: #DAA49A;
+  color: #daa49a;
 }
 
 .infoImWrap {
@@ -320,13 +321,13 @@ q {
 
 #learning {
   padding: 32px 72px 0px 72px;
-  background-color: #373F51;
+  background-color: #373f51;
 }
 
 @media screen and (max-width: 768px) {
   #learning {
     padding: 32px 24px;
-    background-color: #DAA49A;
+    background-color: #daa49a;
   }
   #learning h1 {
     margin: 0px;
@@ -361,8 +362,8 @@ q {
   width: 26%;
   margin-bottom: 32px;
   border-radius: 8px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -370,7 +371,7 @@ q {
     width: 100%;
     padding: 0px;
     margin: 8px;
-    background-color: #373F51;
+    background-color: #373f51;
     color: white;
   }
   #learning .card p {
@@ -402,7 +403,7 @@ q {
 
 #thesis {
   padding: 32px 0 32px 24px;
-  background-color: #D8DBE2;
+  background-color: #d8dbe2;
 }
 
 @media screen and (max-width: 768px) {
@@ -466,7 +467,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #D8DBE2;
+  background-color: #d8dbe2;
 }
 
 footer #rightContent p {
